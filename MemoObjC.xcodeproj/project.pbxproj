@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		76723C642436D0BE006CA8AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723C632436D0BE006CA8AC /* AppDelegate.m */; };
 		76723C672436D0BE006CA8AC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723C662436D0BE006CA8AC /* SceneDelegate.m */; };
-		76723C6A2436D0BE006CA8AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723C692436D0BE006CA8AC /* ViewController.m */; };
 		76723C6D2436D0BE006CA8AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76723C6B2436D0BE006CA8AC /* Main.storyboard */; };
 		76723C702436D0BE006CA8AC /* MemoObjC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76723C6E2436D0BE006CA8AC /* MemoObjC.xcdatamodeld */; };
 		76723C722436D0C0006CA8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76723C712436D0C0006CA8AC /* Assets.xcassets */; };
@@ -18,13 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		76723C5F2436D0BE006CA8AC /* MemoObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76723C5F2436D0BE006CA8AC /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76723C622436D0BE006CA8AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76723C632436D0BE006CA8AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		76723C652436D0BE006CA8AC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		76723C662436D0BE006CA8AC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		76723C682436D0BE006CA8AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		76723C692436D0BE006CA8AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		76723C6C2436D0BE006CA8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76723C6F2436D0BE006CA8AC /* MemoObjC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemoObjC.xcdatamodel; sourceTree = "<group>"; };
 		76723C712436D0C0006CA8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +52,7 @@
 		76723C602436D0BE006CA8AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76723C5F2436D0BE006CA8AC /* MemoObjC.app */,
+				76723C5F2436D0BE006CA8AC /* Memo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,20 +60,58 @@
 		76723C612436D0BE006CA8AC /* MemoObjC */ = {
 			isa = PBXGroup;
 			children = (
+				76723C7E2436D1B1006CA8AC /* AppDelegate */,
+				76723C7F2436D1BD006CA8AC /* Resource */,
+				76723C812436D1E0006CA8AC /* View */,
+				76723C6E2436D0BE006CA8AC /* MemoObjC.xcdatamodeld */,
+			);
+			path = MemoObjC;
+			sourceTree = "<group>";
+		};
+		76723C7E2436D1B1006CA8AC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				76723C622436D0BE006CA8AC /* AppDelegate.h */,
 				76723C632436D0BE006CA8AC /* AppDelegate.m */,
 				76723C652436D0BE006CA8AC /* SceneDelegate.h */,
 				76723C662436D0BE006CA8AC /* SceneDelegate.m */,
-				76723C682436D0BE006CA8AC /* ViewController.h */,
-				76723C692436D0BE006CA8AC /* ViewController.m */,
-				76723C6B2436D0BE006CA8AC /* Main.storyboard */,
-				76723C712436D0C0006CA8AC /* Assets.xcassets */,
-				76723C732436D0C0006CA8AC /* LaunchScreen.storyboard */,
-				76723C762436D0C0006CA8AC /* Info.plist */,
-				76723C772436D0C0006CA8AC /* main.m */,
-				76723C6E2436D0BE006CA8AC /* MemoObjC.xcdatamodeld */,
 			);
-			path = MemoObjC;
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		76723C7F2436D1BD006CA8AC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				76723C712436D0C0006CA8AC /* Assets.xcassets */,
+				76723C762436D0C0006CA8AC /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		76723C802436D1D5006CA8AC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				76723C732436D0C0006CA8AC /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		76723C812436D1E0006CA8AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76723C802436D1D5006CA8AC /* Launch */,
+				76723C822436D1F0006CA8AC /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76723C822436D1F0006CA8AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				76723C6B2436D0BE006CA8AC /* Main.storyboard */,
+				76723C772436D0C0006CA8AC /* main.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +131,7 @@
 			);
 			name = MemoObjC;
 			productName = MemoObjC;
-			productReference = 76723C5F2436D0BE006CA8AC /* MemoObjC.app */;
+			productReference = 76723C5F2436D0BE006CA8AC /* Memo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76723C782436D0C0006CA8AC /* main.m in Sources */,
-				76723C6A2436D0BE006CA8AC /* ViewController.m in Sources */,
 				76723C702436D0BE006CA8AC /* MemoObjC.xcdatamodeld in Sources */,
 				76723C642436D0BE006CA8AC /* AppDelegate.m in Sources */,
 				76723C672436D0BE006CA8AC /* SceneDelegate.m in Sources */,
@@ -295,14 +329,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 994BWAVX9G;
-				INFOPLIST_FILE = MemoObjC/Info.plist;
+				INFOPLIST_FILE = MemoObjC/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moonift.MemoObjC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = Memo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,14 +347,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 994BWAVX9G;
-				INFOPLIST_FILE = MemoObjC/Info.plist;
+				INFOPLIST_FILE = MemoObjC/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moonift.MemoObjC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = Memo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
